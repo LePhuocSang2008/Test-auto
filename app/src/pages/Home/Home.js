@@ -28,6 +28,7 @@ const Home = () => {
       <div className="container">
         <h1>Chúc Mừng Năm Mới 2025 🎉</h1>
         <p>Chúc bạn một năm mới tràn đầy sức khỏe, hạnh phúc và thành công!</p>
+        <p>8386 mãi đỉnh</p>
         {/* Đổi onclick thành onClick */}
         <button onClick={showLiXi}>Nhận Bao Lì Xì 💌</button>
       </div>
