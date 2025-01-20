@@ -1,6 +1,7 @@
 
 import './App.css';
 import './styles/home.css'
+import './styles/lixi.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
