@@ -1,16 +1,25 @@
 import "../../styles/home.css";
+import "../../styles/lixi.css";
+import IMG from "../../assets/images/img.png"
+import React, { useState } from "react";
+import { Dialog, DialogContent, DialogActions, Button } from "@mui/material";
 
 const Home = () => {
-  const showLiXi = () => {
-    const container = document.getElementById("bao-li-xi-container");
 
+
+  const showLiXi = () => {
+    setOpen(true);
+
+    const container = document.getElementById("bao-li-xi-container");
     // Tạo 30 phần tử lì xì
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 10; i++) {
       const liXi = document.createElement("div");
       liXi.className = "lixi";
-      liXi.style.left = Math.random() * 100 + "vw";
-      liXi.style.animationDuration = Math.random() * 2 + 3 + "s";
+      // liXi.style.left = Math.random() * 100 + "vw";
+      liXi.style.right = Math.random() * 100 + "vw";
+      liXi.style.animationDuration = Math.random() * 2 +2 + "s";
       liXi.style.animationDelay = Math.random() * 2 + "s";
+      liXi.style.width = 100%
       container.appendChild(liXi);
 
       // Xóa lì xì sau khi hoàn thành animation
@@ -18,11 +27,13 @@ const Home = () => {
         liXi.remove();
       });
     }
-
-    console.log("ad");
-    
   };
 
+  const [open, setOpen] = useState(false);
+
+  //  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  
   return (
     <>
       <div className="container">
@@ -33,6 +44,38 @@ const Home = () => {
         <button onClick={showLiXi}>Nhận Bao Lì Xì 💌</button>
       </div>
       <div id="bao-li-xi-container"></div>
+
+      <div>
+        <Dialog open={open} onClose={handleClose}>
+          <DialogContent>
+            <p
+              style={{
+                color: "red",
+                marginBottom: 0,
+              }}
+            >
+              Quét mã liền tay
+            </p>
+            <p
+              style={{
+                color: "red",
+              }}
+            >
+              Lì xì trao tay
+            </p>
+            <img
+              src={IMG}
+              alt="Binny"
+              style={{ maxWidth: "100%", borderRadius: "10px" }}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} color="primary">
+              Đóng
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </div>
     </>
   );
 };
