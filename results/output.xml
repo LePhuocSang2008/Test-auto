@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on win32)" generated="2025-01-08T10:05:41.928330" rpa="false" schemaversion="5">
+<suite id="s1" name="Reactjs" source="D:\Learn Test Automation\reactjs">
+<suite id="s1-s1" name="App" source="D:\Learn Test Automation\reactjs\app">
+<suite id="s1-s1-s1" name="Src" source="D:\Learn Test Automation\reactjs\app\src">
+<suite id="s1-s1-s1-s1" name="Test" source="D:\Learn Test Automation\reactjs\app\src\test">
+<suite id="s1-s1-s1-s1-s1" name="Robot Test" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test">
+<suite id="s1-s1-s1-s1-s1-s1" name="Src" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test\src">
+<suite id="s1-s1-s1-s1-s1-s1-s1" name="Testcase" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test\src\Testcase">
+<suite id="s1-s1-s1-s1-s1-s1-s1-s1" name="Login" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test\src\Testcase\Login.robot">
+<test id="s1-s1-s1-s1-s1-s1-s1-s1-t1" name="Login failed due to missing username or password" line="10">
+<kw name="Login" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:42.468050" level="INFO">Opening browser 'chrome' to base url 'https://express-staging.gonsa.vn/home-page/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T10:05:42.467544" elapsed="4.803145"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T10:05:47.272198" elapsed="0.141990"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:47.422406" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[4]'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:05:47.414705" elapsed="0.891186"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:48.306397" level="INFO">Typing text '' into text field 'user'.</msg>
+<arg>user</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:05:48.305891" elapsed="0.334416"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:48.640307" level="INFO">Typing password into text field 'pwd'.</msg>
+<msg time="2025-01-08T10:05:48.688642" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>pwd</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:05:48.640307" elapsed="0.102369"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:48.743679" level="INFO">Clicking element 'xpath=//*[@id="checkRe"]'.</msg>
+<arg>xpath=//*[@id="checkRe"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:05:48.742676" elapsed="0.235672"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:48.978878" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/button'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:05:48.978878" elapsed="0.470034"/>
+</kw>
+<arg>userName=</arg>
+<arg>passWord=</arg>
+<status status="PASS" start="2025-01-08T10:05:42.466541" elapsed="6.982371"/>
+</kw>
+<status status="PASS" start="2025-01-08T10:05:42.462547" elapsed="6.992122"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-s1-s1-t2" name="Login failed due to missing username" line="13">
+<kw name="Login" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:05:49.459696" level="INFO">Opening browser 'chrome' to base url 'https://express-staging.gonsa.vn/home-page/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T10:05:49.458691" elapsed="10.549343"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T10:06:00.009009" elapsed="0.648915"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:00.658792" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[4]'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:00.658430" elapsed="0.636573"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:01.296288" level="INFO">Typing text '' into text field 'user'.</msg>
+<arg>user</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:01.296009" elapsed="0.681342"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:01.978368" level="INFO">Typing password into text field 'pwd'.</msg>
+<msg time="2025-01-08T10:06:02.110971" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>pwd</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:01.977858" elapsed="0.421756"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:02.400051" level="INFO">Clicking element 'xpath=//*[@id="checkRe"]'.</msg>
+<arg>xpath=//*[@id="checkRe"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:02.400051" elapsed="0.223983"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:02.625333" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/button'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:02.624827" elapsed="0.189783"/>
+</kw>
+<arg>userName=</arg>
+<arg>passWord=${Password}</arg>
+<status status="PASS" start="2025-01-08T10:05:49.458691" elapsed="13.355919"/>
+</kw>
+<status status="PASS" start="2025-01-08T10:05:49.457180" elapsed="13.369452"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-s1-s1-t3" name="Login failed due to missing password" line="16">
+<kw name="Login" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:02.830881" level="INFO">Opening browser 'chrome' to base url 'https://express-staging.gonsa.vn/home-page/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T10:06:02.829875" elapsed="14.194071"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T10:06:17.025654" elapsed="0.522056"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:17.549523" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[4]'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:17.548238" elapsed="1.759875"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:19.309115" level="INFO">Typing text '10034177' into text field 'user'.</msg>
+<arg>user</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:19.308113" elapsed="0.517352"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:19.826976" level="INFO">Typing password into text field 'pwd'.</msg>
+<msg time="2025-01-08T10:06:19.894390" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>pwd</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:19.825465" elapsed="0.189031"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:20.014496" level="INFO">Clicking element 'xpath=//*[@id="checkRe"]'.</msg>
+<arg>xpath=//*[@id="checkRe"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:20.014496" elapsed="0.417433"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:20.439118" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/button'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:20.438112" elapsed="0.143273"/>
+</kw>
+<arg>userName=${UserName}</arg>
+<arg>passWord=</arg>
+<status status="PASS" start="2025-01-08T10:06:02.829875" elapsed="17.751510"/>
+</kw>
+<status status="PASS" start="2025-01-08T10:06:02.828229" elapsed="17.756858"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-s1-s1-t4" name="Login successfull" line="19">
+<kw name="Login" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:20.592953" level="INFO">Opening browser 'chrome' to base url 'https://express-staging.gonsa.vn/home-page/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T10:06:20.592447" elapsed="16.760630"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T10:06:37.354098" elapsed="0.455084"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:37.810782" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[4]'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:37.809182" elapsed="0.367934"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:38.178012" level="INFO">Typing text '10034177' into text field 'user'.</msg>
+<arg>user</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:38.177116" elapsed="0.702823"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:38.880944" level="INFO">Typing password into text field 'pwd'.</msg>
+<msg time="2025-01-08T10:06:39.073501" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>pwd</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:38.879939" elapsed="0.334477"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:39.214416" level="INFO">Clicking element 'xpath=//*[@id="checkRe"]'.</msg>
+<arg>xpath=//*[@id="checkRe"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:39.214416" elapsed="0.190890"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-08T10:06:39.406955" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/button'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T10:06:39.406312" elapsed="0.209654"/>
+</kw>
+<arg>userName=${UserName}</arg>
+<arg>passWord=${Password}</arg>
+<status status="PASS" start="2025-01-08T10:06:20.587601" elapsed="19.028365"/>
+</kw>
+<status status="PASS" start="2025-01-08T10:06:20.587601" elapsed="19.032448"/>
+</test>
+<status status="PASS" start="2025-01-08T10:05:42.077836" elapsed="57.546303"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.073256" elapsed="57.556207"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.064987" elapsed="57.567294"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.052189" elapsed="57.587721"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.044167" elapsed="57.598853"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.040941" elapsed="57.613679"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:42.036320" elapsed="57.622328"/>
+</suite>
+<status status="PASS" start="2025-01-08T10:05:41.960265" elapsed="57.702458"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Reactjs">Reactjs</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="App">Reactjs.App</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="Src">Reactjs.App.Src</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1-s1" name="Test">Reactjs.App.Src.Test</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Robot Test">Reactjs.App.Src.Test.Robot Test</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Src">Reactjs.App.Src.Test.Robot Test.Src</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1-s1" name="Testcase">Reactjs.App.Src.Test.Robot Test.Src.Testcase</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1-s1-s1" name="Login">Reactjs.App.Src.Test.Robot Test.Src.Testcase.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

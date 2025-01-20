@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on win32)" generated="2024-10-17T09:29:58.464056" rpa="false" schemaversion="5">
+<suite id="s1" name="App" source="D:\Learn Test Automation\reactjs\app">
+<suite id="s1-s1" name="Src" source="D:\Learn Test Automation\reactjs\app\src">
+<suite id="s1-s1-s1" name="Test" source="D:\Learn Test Automation\reactjs\app\src\test">
+<suite id="s1-s1-s1-s1" name="Robot Test" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test">
+<suite id="s1-s1-s1-s1-s1" name="GetListState" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test\GetListState.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Get Random Option From API" line="12">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2024-10-17T09:29:59.264162" level="INFO">GET Request : url=http://gw-tms-staging.gonsa.vn/mobile-customer-api/api/v1/gonsa/users/dropdown/states?is_express=0 
+ path_url=/mobile-customer-api/api/v1/gonsa/users/dropdown/states?is_express=0 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-10-17T09:29:59.264162" level="INFO">GET Response : url=http://gw-tms-staging.gonsa.vn/mobile-customer-api/api/v1/gonsa/users/dropdown/states?is_express=0 
+ status=200, reason=OK 
+ headers={'Server': 'nginx', 'Date': 'Thu, 17 Oct 2024 02:29:59 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Accept-Encoding', 'X-Powered-By': 'PHP/7.4.33', 'Cache-Control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'ETag': 'W/"1e24382c697b2d567ba5bd519f213b9a039f57ea"', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip'} 
+ body={"data":[{"code":"89","name":"An Giang","full_name":"T\u1ec9nh An Giang","code_name":"an_giang","short_name":"ag"},{"code":"77","name":"B\u00e0 R\u1ecba - V\u0169ng T\u00e0u","full_name":"T\u1ec9nh B\u00e0 R\u1ecba - V\u0169ng T\u00e0u","code_name":"ba_ria_vung_tau","short_name":"br vt"},{"code":"24","name":"B\u1eafc Giang","full_name":"T\u1ec9nh B\u1eafc Giang","code_name":"bac_giang","short_name":"bg"},{"code":"06","name":"B\u1eafc K\u1ea1n","full_name":"T\u1ec9nh B\u1eafc K\u1ea1n","code_name":"bac_kan","short_name":"bk"},{"code":"95","name":"B\u1ea1c Li\u00eau","full_name":"T\u1ec9nh B\u1ea1c Li\u00eau","code_name":"bac_lieu","short_name":"bl"},{"code":"27","name":"B\u1eafc Ninh","full_name":"T\u1ec9nh B\u1eafc Ninh","code_name":"bac_ninh","short_name":"bn"},{"code":"83","name":"B\u1ebfn Tre","full_name":"T\u1ec9nh B\u1ebfn Tre","code_name":"ben_tre","short_name":"bt"},{"code":"52","name":"B\u00ecnh \u0110\u1ecbnh","full_name":"T\u1ec9nh B\u00ecnh \u0110\u1ecbnh","code_name":"binh_dinh","short_name":"bd"},{"code":"74","name":"B\u00ecnh D\u01b0\u01a1ng","full_name":"T\u1ec9nh B\u00ecnh D\u01b0\u01a1ng","code_name":"binh_duong","short_name":"bd"},{"code":"70","name":"B\u00ecnh Ph\u01b0\u1edbc","full_name":"T\u1ec9nh B\u00ecnh Ph\u01b0\u1edbc","code_name":"binh_phuoc","short_name":"bp"},{"code":"60","name":"B\u00ecnh Thu\u1eadn","full_name":"T\u1ec9nh B\u00ecnh Thu\u1eadn","code_name":"binh_thuan","short_name":"bt"},{"code":"96","name":"C\u00e0 Mau","full_name":"T\u1ec9nh C\u00e0 Mau","code_name":"ca_mau","short_name":"cm"},{"code":"92","name":"C\u1ea7n Th\u01a1","full_name":"Th\u00e0nh ph\u1ed1 C\u1ea7n Th\u01a1","code_name":"can_tho","short_name":"ct"},{"code":"04","name":"Cao B\u1eb1ng","full_name":"T\u1ec9nh Cao B\u1eb1ng","code_name":"cao_bang","short_name":"cb"},{"code":"48","name":"\u0110\u00e0 N\u1eb5ng","full_name":"Th\u00e0nh ph\u1ed1 \u0110\u00e0 N\u1eb5ng","code_name":"da_nang","short_name":"dn"},{"code":"66","name":"\u0110\u1eafk L\u1eafk","full_name":"T\u1ec9nh \u0110\u1eafk L\u1eafk","code_name":"dak_lak","short_name":"dl"},{"code":"67","name":"\u0110\u1eafk N\u00f4ng","full_name":"T\u1ec9nh \u0110\u1eafk N\u00f4ng","code_name":"dak_nong","short_name":"dn"},{"code":"11","name":"\u0110i\u1ec7n Bi\u00ean","full_name":"T\u1ec9nh \u0110i\u1ec7n Bi\u00ean","code_name":"dien_bien","short_name":"db"},{"code":"75","name":"\u0110\u1ed3ng Nai","full_name":"T\u1ec9nh \u0110\u1ed3ng Nai","code_name":"dong_nai","short_name":"dn"},{"code":"87","name":"\u0110\u1ed3ng Th\u00e1p","full_name":"T\u1ec9nh \u0110\u1ed3ng Th\u00e1p","code_name":"dong_thap","short_name":"dt"},{"code":"64","name":"Gia Lai","full_name":"T\u1ec9nh Gia Lai","code_name":"gia_lai","short_name":"gl"},{"code":"02","name":"H\u00e0 Giang","full_name":"T\u1ec9nh H\u00e0 Giang","code_name":"ha_giang","short_name":"hg"},{"code":"35","name":"H\u00e0 Nam","full_name":"T\u1ec9nh H\u00e0 Nam","code_name":"ha_nam","short_name":"hn"},{"code":"01","name":"H\u00e0 N\u1ed9i","full_name":"Th\u00e0nh ph\u1ed1 H\u00e0 N\u1ed9i","code_name":"ha_noi","short_name":"hn"},{"code":"42","name":"H\u00e0 T\u0129nh","full_name":"T\u1ec9nh H\u00e0 T\u0129nh","code_name":"ha_tinh","short_name":"ht"},{"code":"30","name":"H\u1ea3i D\u01b0\u01a1ng","full_name":"T\u1ec9nh H\u1ea3i D\u01b0\u01a1ng","code_name":"hai_duong","short_name":"hd"},{"code":"31","name":"H\u1ea3i Ph\u00f2ng","full_name":"Th\u00e0nh ph\u1ed1 H\u1ea3i Ph\u00f2ng","code_name":"hai_phong","short_name":"hp"},{"code":"93","name":"H\u1eadu Giang","full_name":"T\u1ec9nh H\u1eadu Giang","code_name":"hau_giang","short_name":"hg"},{"code":"79","name":"H\u1ed3 Ch\u00ed Minh","full_name":"Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh","code_name":"ho_chi_minh","short_name":"hcm"},{"code":"17","name":"Ho\u00e0 B\u00ecnh","full_name":"T\u1ec9nh Ho\u00e0 B\u00ecnh","code_name":"hoa_binh","short_name":"hb"},{"code":"33","name":"H\u01b0ng Y\u00ean","full_name":"T\u1ec9nh H\u01b0ng Y\u00ean","code_name":"hung_yen","short_name":"hy"},{"code":"56","name":"Kh\u00e1nh H\u00f2a","full_name":"T\u1ec9nh Kh\u00e1nh H\u00f2a","code_name":"khanh_hoa","short_name":"kh"},{"code":"91","name":"Ki\u00ean Giang","full_name":"T\u1ec9nh Ki\u00ean Giang","code_name":"kien_giang","short_name":"kg"},{"code":"62","name":"Kon Tum","full_name":"T\u1ec9nh Kon Tum","code_name":"kon_tum","short_name":"kt"},{"code":"12","name":"Lai Ch\u00e2u","full_name":"T\u1ec9nh Lai Ch\u00e2u","code_name":"lai_chau","short_name":"lc"},{"code":"68","name":"L\u00e2m \u0110\u1ed3ng","full_name":"T\u1ec9nh L\u00e2m \u0110\u1ed3ng","code_name":"lam_dong","short_name":"ld"},{"code":"20","name":"L\u1ea1ng S\u01a1n","full_name":"T\u1ec9nh L\u1ea1ng S\u01a1n","code_name":"lang_son","short_name":"ls"},{"code":"10","name":"L\u00e0o Cai","full_name":"T\u1ec9nh L\u00e0o Cai","code_name":"lao_cai","short_name":"lc"},{"code":"80","name":"Long An","full_name":"T\u1ec9nh Long An","code_name":"long_an","short_name":"la"},{"code":"36","name":"Nam \u0110\u1ecbnh","full_name":"T\u1ec9nh Nam \u0110\u1ecbnh","code_name":"nam_dinh","short_name":"nd"},{"code":"40","name":"Ngh\u1ec7 An","full_name":"T\u1ec9nh Ngh\u1ec7 An","code_name":"nghe_an","short_name":"na"},{"code":"37","name":"Ninh B\u00ecnh","full_name":"T\u1ec9nh Ninh B\u00ecnh","code_name":"ninh_binh","short_name":"nb"},{"code":"58","name":"Ninh Thu\u1eadn","full_name":"T\u1ec9nh Ninh Thu\u1eadn","code_name":"ninh_thuan","short_name":"nt"},{"code":"25","name":"Ph\u00fa Th\u1ecd","full_name":"T\u1ec9nh Ph\u00fa Th\u1ecd","code_name":"phu_tho","short_name":"pt"},{"code":"54","name":"Ph\u00fa Y\u00ean","full_name":"T\u1ec9nh Ph\u00fa Y\u00ean","code_name":"phu_yen","short_name":"py"},{"code":"44","name":"Qu\u1ea3ng B\u00ecnh","full_name":"T\u1ec9nh Qu\u1ea3ng B\u00ecnh","code_name":"quang_binh","short_name":"qb"},{"code":"49","name":"Qu\u1ea3ng Nam","full_name":"T\u1ec9nh Qu\u1ea3ng Nam","code_name":"quang_nam","short_name":"qn"},{"code":"51","name":"Qu\u1ea3ng Ng\u00e3i","full_name":"T\u1ec9nh Qu\u1ea3ng Ng\u00e3i","code_name":"quang_ngai","short_name":"qn"},{"code":"22","name":"Qu\u1ea3ng Ninh","full_name":"T\u1ec9nh Qu\u1ea3ng Ninh","code_name":"quang_ninh","short_name":"qn"},{"code":"45","name":"Qu\u1ea3ng Tr\u1ecb","full_name":"T\u1ec9nh Qu\u1ea3ng Tr\u1ecb","code_name":"quang_tri","short_name":"qt"},{"code":"94","name":"S\u00f3c Tr\u0103ng","full_name":"T\u1ec9nh S\u00f3c Tr\u0103ng","code_name":"soc_trang","short_name":"st"},{"code":"14","name":"S\u01a1n La","full_name":"T\u1ec9nh S\u01a1n La","code_name":"son_la","short_name":"sl"},{"code":"72","name":"T\u00e2y Ninh","full_name":"T\u1ec9nh T\u00e2y Ninh","code_name":"tay_ninh","short_name":"tn"},{"code":"34","name":"Th\u00e1i B\u00ecnh","full_name":"T\u1ec9nh Th\u00e1i B\u00ecnh","code_name":"thai_binh","short_name":"tb"},{"code":"19","name":"Th\u00e1i Nguy\u00ean","full_name":"T\u1ec9nh Th\u00e1i Nguy\u00ean","code_name":"thai_nguyen","short_name":"tn"},{"code":"38","name":"Thanh H\u00f3a","full_name":"T\u1ec9nh Thanh H\u00f3a","code_name":"thanh_hoa","short_name":"th"},{"code":"46","name":"Th\u1eeba Thi\u00ean Hu\u1ebf","full_name":"T\u1ec9nh Th\u1eeba Thi\u00ean Hu\u1ebf","code_name":"thua_thien_hue","short_name":"tt"},{"code":"82","name":"Ti\u1ec1n Giang","full_name":"T\u1ec9nh Ti\u1ec1n Giang","code_name":"tien_giang","short_name":"tg"},{"code":"84","name":"Tr\u00e0 Vinh","full_name":"T\u1ec9nh Tr\u00e0 Vinh","code_name":"tra_vinh","short_name":"tv"},{"code":"08","name":"Tuy\u00ean Quang","full_name":"T\u1ec9nh Tuy\u00ean Quang","code_name":"tuyen_quang","short_name":"tq"},{"code":"86","name":"V\u0129nh Long","full_name":"T\u1ec9nh V\u0129nh Long","code_name":"vinh_long","short_name":"vl"},{"code":"26","name":"V\u0129nh Ph\u00fac","full_name":"T\u1ec9nh V\u0129nh Ph\u00fac","code_name":"vinh_phuc","short_name":"vp"},{"code":"15","name":"Y\u00ean B\u00e1i","full_name":"T\u1ec9nh Y\u00ean B\u00e1i","code_name":"yen_bai","short_name":"yb"}]} 
+ </msg>
+<msg time="2024-10-17T09:29:59.265521" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${URL_API_STATE}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2024-10-17T09:29:59.136300" elapsed="0.129221"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-10-17T09:29:59.267519" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-10-17T09:29:59.266522" elapsed="0.002011"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-17T09:29:59.268533" elapsed="0.004905"/>
+</kw>
+<status status="PASS" start="2024-10-17T09:29:59.134984" elapsed="0.139539"/>
+</test>
+<status status="PASS" start="2024-10-17T09:29:58.502303" elapsed="0.773713"/>
+</suite>
+<status status="PASS" start="2024-10-17T09:29:58.497380" elapsed="0.779638"/>
+</suite>
+<status status="PASS" start="2024-10-17T09:29:58.495298" elapsed="0.782716"/>
+</suite>
+<status status="PASS" start="2024-10-17T09:29:58.492718" elapsed="0.787841"/>
+</suite>
+<status status="PASS" start="2024-10-17T09:29:58.469117" elapsed="0.812440"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="App">App</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Src">App.Src</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test">App.Src.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Robot Test">App.Src.Test.Robot Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="GetListState">App.Src.Test.Robot Test.GetListState</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

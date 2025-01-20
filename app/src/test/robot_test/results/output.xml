@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on win32)" generated="2024-10-15T13:45:04.933692" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Test" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test">
+<suite id="s1-s1" name="Register" source="D:\Learn Test Automation\reactjs\app\src\test\robot_test\register.robot">
+<test id="s1-s1-t1" name="REGISTER ORDER" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:05.569257" level="INFO">Opening browser 'Chrome' to base url 'https://express-staging.gonsa.vn/index'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-15T13:45:05.568280" elapsed="7.416237"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-15T13:45:12.986512" elapsed="0.179024"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:13.169472" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[3]/a'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:13.165536" elapsed="0.290399"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:13.457932" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div/li[3]/div/div[1]/div/div'.</msg>
+<arg>xpath=//*[@id="menu"]/div/li[3]/div/div[1]/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:13.456940" elapsed="0.338567"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:13.799480" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/div/div/div[1]/div/select'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/div/div/div[1]/div/select</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:13.797534" elapsed="0.354625"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:14.153137" level="INFO">Clicking element 'xpath=//*[@id="HeaderLogin"]/div/div/div[1]/div/select/option[2]'.</msg>
+<arg>xpath=//*[@id="HeaderLogin"]/div/div/div[1]/div/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:14.152159" elapsed="0.148218"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:14.301351" level="INFO">Typing text '0944241013' into text field 'phone'.</msg>
+<arg>phone</arg>
+<arg>${phone}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:14.301351" elapsed="0.208359"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:14.510687" level="INFO">Typing text 'ODR-2409-00011523' into text field 'odr_num'.</msg>
+<arg>odr_num</arg>
+<arg>${odr_num}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:14.509710" elapsed="0.169992"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:14.686495" level="INFO">Clicking element '//*[@id="HeaderLogin"]/button'.</msg>
+<arg>//*[@id="HeaderLogin"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T13:45:14.682497" elapsed="0.081209"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T13:45:14.765615" level="INFO">Clicking element 'xpath=//*[@id="sendOTP"]/div[1]/div[2]/div/label[2]/input'.</msg>
+<msg time="2024-10-15T13:45:15.351142" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-15T13:45:15.352116" level="FAIL">Element with locator 'xpath=//*[@id="sendOTP"]/div[1]/div[2]/div/label[2]/input' not found.</msg>
+<arg>xpath=//*[@id="sendOTP"]/div[1]/div[2]/div/label[2]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-15T13:45:14.763706" elapsed="0.611551">Element with locator 'xpath=//*[@id="sendOTP"]/div[1]/div[2]/div/label[2]/input' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="sendOTP"]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-15T13:45:15.376262" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="getOTP"]/div[1]/div[3]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-15T13:45:15.377238" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-15T13:45:05.566543" elapsed="9.813000">Element with locator 'xpath=//*[@id="sendOTP"]/div[1]/div[2]/div/label[2]/input' not found.</status>
+</test>
+<status status="FAIL" start="2024-10-15T13:45:05.001470" elapsed="10.401165"/>
+</suite>
+<status status="FAIL" start="2024-10-15T13:45:04.946666" elapsed="10.462259"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot Test">Robot Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Register">Robot Test.Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
